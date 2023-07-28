@@ -68,7 +68,12 @@ const productos = [
     }
 ]
 
-productos.forEach(producto => prodContainer.save(producto));
+//productos.forEach(producto => prodContainer.save(producto));
+
+for (let index = 0; index < productos.length; index++) {
+    prodContainer.save(productos[index]);
+    
+}
 
 
 app.listen(8080, () => {
